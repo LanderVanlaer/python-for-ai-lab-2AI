@@ -17,11 +17,10 @@ from datetime import datetime, timedelta
 
 
 def mystrfdelta(d: timedelta):
-    days = d.days
-    hours = d.seconds // 3600
-    minutes = (d.seconds - hours * 3600) // 60
-    seconds = d.seconds - minutes * 60 - hours * 3600
-    return days, hours, minutes, seconds
+    return d.days, \
+        d.seconds // 3600, \
+        d.seconds % 3600 // 60, \
+        d.seconds % 60
 
 
 date1 = datetime.now()
