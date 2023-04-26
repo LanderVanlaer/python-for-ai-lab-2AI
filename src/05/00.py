@@ -66,3 +66,6 @@ X_train, y_train = df[columns_categorical + columns_numerical], df["Survived"]
 
 cvs = cross_val_score(transformer, X=X_train, y=y_train, cv=10, scoring="accuracy")
 print(cvs, "mean:", cvs.mean())
+
+# [0.74444444 0.79775281 0.74157303 0.80898876 0.88764045 0.83146067
+#  0.83146067 0.7752809  0.84269663 0.84269663] mean: 0.8103995006242197
