@@ -243,3 +243,4 @@ playground/*
 !playground/.gitkeep
 
 .idea/sonarlint
+resources/titanic
