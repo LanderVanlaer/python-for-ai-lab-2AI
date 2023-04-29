@@ -244,3 +244,4 @@ playground/*
 
 .idea/sonarlint
 resources/titanic
+dump
