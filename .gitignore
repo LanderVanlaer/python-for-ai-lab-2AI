@@ -245,3 +245,4 @@ playground/*
 .idea/sonarlint
 resources/titanic
 dump
+.virtual_documents
